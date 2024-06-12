@@ -6,4 +6,4 @@
 ### ¡Bienvenido a mi proyecto Portafolio!
 ---
 #### Preview
-![Preview](img/readme/preview.png)
+![Preview](https://github.com/auceda95/challenge-one-portafolio-auceda/blob/66351d19b3a6a12d362d66ea65183161a383bd80/assets/img/readme/preview.png)
