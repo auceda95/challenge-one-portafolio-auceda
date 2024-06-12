@@ -1,0 +1,37 @@
+/*Fondo de sección presentación de tamaño completo acorde a la altura del header de escritorio*/
+.section-presentation {
+    background-color: rgba(245, 236, 216, 0.575);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/*Tablets y Smartphones grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .section-presentation {
+        background-color: rgba(245, 236, 216, 0.575);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+    }
+}
+
+/*Smartphones verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    /*Fondo para Smartphone*/
+    .section-presentation {
+        background-color: rgba(245, 236, 216, 0.575);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+    }
+}

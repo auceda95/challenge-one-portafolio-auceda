@@ -1,0 +1,84 @@
+/*Dirección de items*/
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Margen inferior*/
+.form__legend {
+    font-weight: 500;
+    margin: 0 0 2em 0;
+}
+
+/*Configurando estilos de input containers*/
+.form__fields {
+    background: #ffffff;
+    border: 0 0 1px 0;
+    border-bottom: solid 1px #C8C8C8;
+    border-radius: 4px;
+    display: block;
+    margin: 0 0 40px 0;
+    padding: 0.5em 12px;
+    position: static;
+}
+
+/*Flag de input container para email l*/
+.form__fields--blue {
+    color: var(--primary-btn-color);
+    border-bottom: solid 1px var(--primary-btn-color);
+}
+
+.form__fields .form__label {
+    color: #5e4f4f;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*Configurando selectores de clase de tipo texto, email y textarea,
+pueden agregarse numéricos*/
+.form__field,
+.form__textarea {
+    border: none;
+    color: var(--font-color);
+    display: block;
+    font-weight: 400;
+    height: 20px;
+    margin: 4px 0 0 0;
+    width: 100%;
+}
+
+/*Configuracion de selectores*/
+.form__field,
+.form__textarea:focus {
+    outline: 0 none;
+}
+
+/*Flag para email*/
+.form__field--bluefocus:focus {
+    color: var(--primary-btn-color);
+}
+
+/*Expansión solo vértical*/
+.form__textarea {
+    height: 82px;
+    resize: vertical;
+}
+
+/*Se oculta inicialmente el mensaje*/
+.form__span--error {
+    display: none;
+}
+
+.form__fields--incorrect .form__span--error {
+    align-items: center;
+    background: #fc7a7a;
+    border-radius: 2px;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: flex-start;
+    margin: 8px 0 0 0;
+    padding: 8px;
+    width: auto;
+}

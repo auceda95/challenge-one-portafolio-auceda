@@ -1,0 +1,66 @@
+/*Imagen de fondo ded footer*/
+.section-footer {
+    background-color: rgba(245, 236, 216, 0.575);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+/*Container flex*/
+.section-footer__copyright {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+
+/*Container flex para datos del autor*/
+.section-footer__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-footer__author {
+    color: #2c2828;
+    font-weight: 500;
+}
+
+/*Tablets y Smartphones grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .section-footer {
+        /*Color*/
+        background-color: rgba(245, 236, 216, 0.575);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+}
+
+/*Smartphones verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    /*Color para celular*/
+    .section-footer {
+        background-color: rgba(245, 236, 216, 0.575);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /*Cambiando dirección flex a columna*/
+    .section-footer__copyright {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*Centrando texto*/
+    .section-footer__authorr {
+        text-align: center;
+    }
+
+    /*Cambiando dirección flex a columna*/
+    .section-footer__agradecimientos {
+        width: 100%;
+    }
+}

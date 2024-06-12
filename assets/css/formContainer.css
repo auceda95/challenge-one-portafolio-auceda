@@ -1,0 +1,60 @@
+/*Estableciendo padding superior e inferior acorde al header*/
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--height-header-Desk) 0;
+}
+
+/*Configurando ancho y alto de container para imagen*/
+.form-container__image {
+    height: 593px;
+    width: 41%;
+    /*464px*/
+}
+
+/*Flag para imagen de fondo*/
+.form-container__image--contact {
+    background: url('../img/contact.png') no-repeat center / cover;
+}
+
+/*Estableciendo ancho y alto en container de subtitulo y form*/
+.form-container__contact {
+    height: inherit;
+    width: 57%;
+}
+
+/*Flag para configurar margen de subtitulo*/
+.form-container__subtitle {
+    margin: 0 0 0.25em 0;
+    text-align: left;
+}
+
+/*Tablets y Smartphones grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .form-container {
+        padding: var(--height-header-Tablet) 0;
+    }
+
+    .form-container__image {
+        display: none;
+    }
+
+    .form-container__contact {
+        width: 100%;
+    }
+}
+
+/*Smartphones verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .form-container {
+        padding: var(--altura-header-Celular) 0;
+    }
+
+    .form-container__image {
+        display: none;
+    }
+
+    .form-container__contact {
+        width: 100%;
+    }
+}

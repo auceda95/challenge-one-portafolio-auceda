@@ -1,0 +1,59 @@
+/*Estableciendo padding superior e inferior equivalente 
+a la altura del header de escritorio y tablet, con un ancho máximo de 751px
+y de 100% al reducirse*/
+.bio {
+    max-width: 46.937em;
+    padding: var(--height-header-Desk) 0;
+    width: 100%;
+}
+
+/*Eliminando margenes*/
+.bio__subtitle {
+    margin: 0;
+}
+
+/*Eliminando margen inferior*/
+.bio__paragraph {
+    line-height: 19px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/*Tablets y Smartphones grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+
+    /*Estableciendo padding superior e inferior acorde al alto
+    del header de tablt*/
+    .bio {
+        padding: var(--height-header-Tablet) 0;
+    }
+
+    /*Estableciendo tamaño de subtitulo en 22px*/
+    .bio__subtitle {
+        font-size: var(--charSizeTablet-titles);
+    }
+
+    /*Estableciendo tamaño de letra para parrafo de 14px*/
+    .bio__paragraph {
+        font-size: var(--tamañoLetraTablet-parrafoSobreMi-dscImagenes-botones);
+    }
+}
+
+/*Smartphones verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .bio {
+        /*Asignando margen superior e inferior
+        acorde al tamaño del header del celular y estableciendo un ancho completo*/
+        padding: var(--altura-header-Celular) 0;
+    }
+
+    /*Estableciendo tamaño de subtitulo en 22px*/
+    .bio__subtitle {
+        font-size: var(--charSizeSmartphone-titles);
+    }
+
+    /*Estableciendo tamaño de letra para parrafo de 14px*/
+    .bio__paragraph {
+        font-size: var(--charSizeSmartphone-paragraph);
+    }
+}

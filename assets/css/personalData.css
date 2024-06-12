@@ -1,0 +1,173 @@
+/*Ajuste de sección acorde a la altura del menú de escritorio*/
+.personal-data {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    margin-top: 0;
+    width: inherit;
+}
+
+/*Ajuste de texto al centro horizontalmente y definiendo altura
+del contenedor*/
+.personal-data__presentation {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    margin-top: var(--height-header-Desk);
+    width: 66.2%;
+}
+
+/*Estableciendo color de letra y tamaño*/
+.personal-data__title {
+    color: #2c2828;
+    font-size: var(--charSizeDesk-title);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/*Estableciendo color de letra y tamaño*/
+.personal-data__paragraph {
+    color: #2c2828;
+    font-size: var(--charSizeDesk-subtitlePic);
+    font-weight: 500;
+    margin: 0.5em 0 0 0;
+}
+
+/*Limpieza de configuraciones de lista por defecto y alineando en 
+filas*/
+.personal-data__contacts {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    width: 25.1em;
+    /*401.6px*/
+}
+
+/*Eliminacion de subrayado y establecimiento de transición*/
+.personal-data__contact {
+    transition: all 0.5s ease-out;
+}
+
+/*Traslado de elemento li*/
+.personal-data__contact:hover {
+    transform: translate(0, 0.3em);
+}
+
+/*Agregando color y eliminando subrayado*/
+.personal-data__link {
+    align-items: center;
+    color: var(--font-color);
+    display: flex;
+    text-decoration: none;
+}
+
+/*Configuracion de icono de texto y asignando ancho y alto*/
+.personal-data__icon {
+    height: 50px;
+    width: 50px;
+}
+
+/*Configuracion de selector flag para iconos*/
+.personal-data__icon--github {
+    background: url("../img/icons/contact/github.png") no-repeat center / cover;
+}
+
+.personal-data__icon--linkedin {
+    background: url("../img/icons/contact/linkedin.png") no-repeat center / cover;
+}
+
+.personal-data__icon--resume {
+    background: url("../img/icons/contact/resume.png") no-repeat center / cover;
+}
+
+/*Estableciendo tamaño de foto y radio circular*/
+.personal-data__image {
+    border-radius: 100%;
+    height: var(--width-height-pic-Desk);
+    margin-top: var(--height-header-Desk);
+    width: var(--width-height-pic-Desk);
+}
+
+/*Tablets y celulares grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+
+    /*Ancho de 100% heredado de .header-principal*/
+    .personal-data {
+        height: 100vh;
+        margin-top: 0;
+    }
+
+    .personal-data__presentation {
+        height: auto;
+    }
+
+    /*Estableciendo tamaño de letra*/
+    .personal-data__title {
+        font-size: var(--charSizeTablet-titles);
+    }
+
+    /*Estableciendo tamaño de letra*/
+    .personal-data__paragraph {
+        font-size: var(--charSizeTablet-All);
+        font-weight: 500;
+    }
+
+    /*Estableciendo tamaño de foto para tablet*/
+    .personal-data__image {
+        height: var(--ancho-alto-foto-Tablet);
+        width: var(--ancho-alto-foto-Tablet);
+    }
+}
+
+/*Celulares verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+
+    /*Ajustando sección acorde a la altura del menú de celular*/
+    .personal-data {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    /*Ajustando texto con una altura automática y un 
+    ancho completo*/
+    .personal-data__presentation {
+        height: auto;
+        margin-top: 0;
+        order: 1;
+        width: 100%;
+    }
+
+    /*Estableciendo tamaño de letra*/
+    .personal-data__title {
+        font-size: var(--charSizeSmartphone-titles);
+    }
+
+    /*Estableciendo tamaño de letra*/
+    .personal-data__paragraph {
+        font-size: var(--charSizeSmartphone-paragraph);
+        font-weight: 500;
+    }
+
+    /*Ajustando sección de contactos*/
+    .personal-data__contacts {
+        width: 100%;
+    }
+
+    /*Estableciendo tamaño de letra*/
+    .personal-data__link {
+        font-size: var(--charSizeSmartphone-paragraph);
+    }
+
+    /*Estableciendo tamaño de foto para Celulares*/
+    .personal-data__image {
+        height: var(--width-height-pic-Smartphone);
+        margin-top: 0;
+        order: 0;
+        width: var(--width-height-pic-Smartphone);
+    }
+}

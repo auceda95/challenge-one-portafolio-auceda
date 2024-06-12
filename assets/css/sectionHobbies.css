@@ -1,0 +1,48 @@
+/*Padding superior e inferior acorde al header*/
+.section-hobbies {
+    padding: var(--height-header-Desk) 0;
+}
+
+/*Container con ancho y alto*/
+.section-hobbies__icon {
+    width: 75px;
+    height: 75px;
+}
+
+/*Selectores flag para iconos*/
+.section-hobbies__icon--music {
+    background: url("../img/icons/hobbies/headphones.png") center / 100% 100% no-repeat;
+}
+
+.section-hobbies__icon--netflix {
+    background: url("../img/icons/hobbies/smarttv.png") center / 100% 100% no-repeat;
+}
+
+.section-hobbies__icon--books {
+    background: url("../img/icons/hobbies/book.png") center / 100% 100% no-repeat;
+}
+
+.section-hobbies__icon--movies {
+    background: url("../img/icons/hobbies/movie.png") center / 100% 100% no-repeat;
+}
+
+/*Formato de text*/
+.section-hobbies__paragraph {
+    font-weight: 700;
+    margin: 0.5em 0 0 0;
+    width: 100%;
+}
+
+/*Tablets y Smartphones grandes u horizontales*/
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    .section-hobbies {
+        padding: var(--height-header-Tablet) 0;
+    }
+}
+
+/*Smartphones verticales*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .section-hobbies {
+        padding: var(--altura-header-Celular) 0;
+    }
+}
